@@ -37,7 +37,7 @@
                   "-Domap=enabled"
                   "-Dcairo-tests=disabled"
                 ]
-                ++ lib.optionals prev.stdenv.hostPlatform.isAarch [
+                ++ lib.optionals prev.stdenv.hostPlatform.isAarch64 [
                   "-Dtegra=enabled"
                   "-Detnaviv=enabled"
                 ];
